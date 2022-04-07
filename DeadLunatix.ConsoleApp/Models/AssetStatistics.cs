@@ -21,9 +21,6 @@ namespace DeadLunatix.ConsoleApp.Models
             HowManyTimesUsed += 1;
         }
 
-        public float GetGeneratedRarity(int allCombinations)
-        {
-            return (HowManyTimesUsed / allCombinations) * 100;
-        }
+        public float GetGeneratedRarity(int allCombinations) => (HowManyTimesUsed / allCombinations) * 100;        
     }
 }

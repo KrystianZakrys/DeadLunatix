@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DeadLunatix.ConsoleApp", "DeadLunatix.ConsoleApp\DeadLunatix.ConsoleApp.csproj", "{E4599A50-F309-498A-B3A8-1A23D2934306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeadLunatix.Avalonia", "DeadLunatix.Avalonia\DeadLunatix.Avalonia.csproj", "{52FC3E70-C0BA-441A-99B3-190DB260B4C6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E4599A50-F309-498A-B3A8-1A23D2934306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4599A50-F309-498A-B3A8-1A23D2934306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4599A50-F309-498A-B3A8-1A23D2934306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4599A50-F309-498A-B3A8-1A23D2934306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52FC3E70-C0BA-441A-99B3-190DB260B4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52FC3E70-C0BA-441A-99B3-190DB260B4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52FC3E70-C0BA-441A-99B3-190DB260B4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52FC3E70-C0BA-441A-99B3-190DB260B4C6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0E7DCF7-FB83-4EDB-A28C-0FED33798900}
+	EndGlobalSection
+EndGlobal

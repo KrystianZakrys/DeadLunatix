@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:DeadLunatix.Avalonia.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1000" d:DesignHeight="450"
+        x:Class="DeadLunatix.Avalonia.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="DeadLunatix.Avalonia">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Grid ColumnDefinitions="200, 4, *">
+		<Rectangle Grid.Column="0"/>
+		<GridSplitter Grid.Column="1" Background="LightGray" BorderThickness="5" ResizeDirection="Columns"/>
+		<ScrollViewer  Grid.Column="2" Margin="15" >
+			<ItemsControl Items="{Binding Images}">
+				<ItemsControl.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel/>
+					</ItemsPanelTemplate>
+				</ItemsControl.ItemsPanel>
+				<ItemsControl.ItemTemplate>
+					<DataTemplate>
+						<StackPanel HorizontalAlignment="Center"
+									VerticalAlignment="Top" >
+							<Image
+							Margin="5"
+							Source="{Binding Image}" Width="200" Height="300"></Image>
+							<Grid ColumnDefinitions="50,50,50,50" RowDefinitions="Auto"
+								Height="20" HorizontalAlignment="Center" VerticalAlignment="Top">
+								<TextBlock Text="Name:" Grid.Row="0" Grid.Column="0"/>
+								<TextBlock Text="{Binding Id}:" Grid.Row="0" Grid.Column="1"/>
+								<TextBlock Text="Rank:" Grid.Row="0" Grid.Column="2"/>
+								<TextBlock Text="{Binding Rank}:" Grid.Row="0" Grid.Column="3"/>
+							</Grid>
+							<TextBlock Text="Traits: " HorizontalAlignment="Center" VerticalAlignment="Top"></TextBlock>
+							<ListBox Items="{Binding Traits}"/>
+						</StackPanel>						
+					</DataTemplate>
+				</ItemsControl.ItemTemplate>
+			</ItemsControl>
+		</ScrollViewer>
+	</Grid>
+
+
+</Window>

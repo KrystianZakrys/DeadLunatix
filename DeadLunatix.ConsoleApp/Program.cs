@@ -21,6 +21,6 @@ try
 catch (Exception e)
 {
     Console.WriteLine("You unleashed the demons");
-    throw;
+    Console.WriteLine(e.Message);
 }
 
